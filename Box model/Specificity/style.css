@@ -1,0 +1,43 @@
+/* .red {
+    color:red;
+}
+.blue {
+    color:blue;
+}
+#title {
+    font-weight: bold;
+}
+
+section {
+    height:30vw;
+    border: 2px solid black;
+} */
+
+section {
+    height:30vw;
+    border: 2px solid black;
+}
+
+p {
+    color:blue; 
+}
+
+.red {
+    color:red;
+}
+
+#title.heading.red {
+    color:black;
+}
+
+p.red {
+    color:purple; /* da notare come non riesca a cambiare il title in quanto ha priorità più alta */
+}
+
+.heading.red {
+    color: green; /* ha comunque priorità più bassa di un title */
+}
+
+p {
+    color:blue !important;
+}

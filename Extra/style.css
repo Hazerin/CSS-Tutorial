@@ -1,0 +1,34 @@
+div::after {
+    content: " Disagio be Like";
+}
+
+div::before {
+    content: "Hello! ";
+}
+
+div:hover {
+    background-color: cyan;
+}
+
+div {
+    transition: background-color 1000ms;
+}
+
+button {
+    transition: all 300ms;
+    animation: float 2s infinite alternate-reverse;
+}
+
+button:hover {
+    background-color: black;
+    color:white;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
