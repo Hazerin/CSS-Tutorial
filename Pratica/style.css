@@ -1,0 +1,65 @@
+div {
+    top:37.5vh;
+    left: 37.5vw;
+    height: 25vh;
+    width: 25vw;
+    border: 1px solid black;
+    background-color: green;
+    position:fixed;
+}
+
+.mobile {
+    top: 0;
+    left: 0;
+    width: 25vh;
+    height: 25vh;
+    position: fixed;
+    background-color: blue;
+    animation: float1 6s infinite;
+}
+
+.mobile2 {
+    top: 25vh;
+    left: 25vh;
+    width: 25vh;
+    height: 25vh;
+    position: fixed;
+    background-color: black;
+    animation: float2 6s infinite;
+}
+
+@keyframes float1 {
+    0% {
+        transform: translate(0vw,0vw);
+    }
+    25% {
+        transform: translate(0vw,75vh);
+    }
+    50% {
+        transform: translate(87vw,75vh);
+    }
+    75% {
+        transform: translate(87vw,0vh);
+    }
+    100% {
+        transform: translate(0vw,0vw);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translate(0vh,0vw);
+    }
+    25% {
+        transform: translate(61vw,0vh);
+    }
+    50% {
+        transform: translate(61vw,25vh);
+    }
+    75% {
+        transform: translate(0vw,25vh);
+    }
+    100% {
+        transform: translate(0vw,0vh);
+    }
+}
